@@ -18,6 +18,12 @@
 BUILD_SHARED_LIBS:BOOL=OFF
 
 //Value Computed by CMake
+CG_BINARY_DIR:STATIC=/home/ana/Documents/CG/build
+
+//Value Computed by CMake
+CG_SOURCE_DIR:STATIC=/home/ana/Documents/CG
+
+//Value Computed by CMake
 CGr_BINARY_DIR:STATIC=/home/ana/Documents/CG/build
 
 //Value Computed by CMake
@@ -202,7 +208,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CGr
+CMAKE_PROJECT_NAME:STATIC=CG
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.3.3

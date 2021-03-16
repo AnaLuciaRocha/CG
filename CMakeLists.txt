@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.15)
 
-project (CGr)
+project (CG)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 
@@ -20,3 +20,5 @@ set(ALL_LIBS
 )
 
 add_subdirectory(tp1)
+add_subdirectory(tp1.ex1)
+
