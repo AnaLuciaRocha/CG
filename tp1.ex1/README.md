@@ -62,24 +62,24 @@ Consiste num exercício muito simples em que teremos uma **janela colorida**, qu
     2. Assim que o programa é executado aparece uma janela com o título *Janela Temporizada* com dimensão 400x400, como se pode ver na <a href="figura1">Figura 1</a> </p>
     
         <figure class="Figura">
-        <img id="figura1"src="ecra1.png" width="200" height="200">
+        <img id="figura1"src="images/ecra1.png" width="200" height="200">
         <figcaption>Figura 1 - Ecrã inicial</figcaption>
         </figure>
 
     3. De seguida caso sejam pressionadas as teclas *R*, *G* ou *B* o ecrã muda de cor como representado na <a href="figura2">Figura 2</a>, <a href="figura3">Figura 3</a> e <a href="figura4">Figura 4</a>, respetivamente. </p>
 
         <figure class="Figura">
-        <img id="figura2"src="ecra2.png" width="200" height="200">
+        <img id="figura2"src="images/ecra2.png" width="200" height="200">
         <figcaption>Figura 2 - Ecrã quando pressionada a tecla R</figcaption>
         </figure>
 
         <figure class="Figura">
-        <img id="figura2"src="ecra3.png" width="200" height="200">
+        <img id="figura2"src="images/ecra3.png" width="200" height="200">
         <figcaption>Figura 3 - Ecrã quando pressionada a tecla G</figcaption>
         </figure>
 
         <figure class="Figura">
-        <img id="figura3"src="ecra4.png" width="200" height="200">
+        <img id="figura3"src="images/ecra4.png" width="200" height="200">
         <figcaption>Figura 4 - Ecrã quando pressionada a tecla B</figcaption>
         </figure>
     
