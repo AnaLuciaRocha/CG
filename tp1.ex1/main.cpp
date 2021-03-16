@@ -18,18 +18,17 @@ void changeBackgoundColor(GLFWwindow *window)
   if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
   {
     glClearColor(1, 0, 0, 0); // Red
-    glClear(GL_COLOR_BUFFER_BIT);
   }
   else if (glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
   {
     glClearColor(0, 1, 0, 0); // Green
-    glClear(GL_COLOR_BUFFER_BIT);
   }
   else if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
   {
     glClearColor(0, 0, 1, 0); // Blue
-    glClear(GL_COLOR_BUFFER_BIT);
   }
+  glClear(GL_COLOR_BUFFER_BIT);
+
 }
 
 /* process all input: query GLFW whether relevant keys are pressed/released 
@@ -60,7 +59,7 @@ void renderLoop(GLFWwindow *window)
 {
     while (!glfwWindowShouldClose(window))
   {
-
+    
     // input
     // -----
     processInput(window);
@@ -115,7 +114,7 @@ int main()
   }
 
   //Background color
-  glClearColor(169.0f / 255.0f, 169.0f / 255.0f, 169.0f / 255.0f, 0); //dark grey
+  glClearColor(49.0f / 255.0f, 51.0f / 255.0f, 53.0f / 255.0f, 0); //dark grey
   glClear(GL_COLOR_BUFFER_BIT);
 
   // render loop
