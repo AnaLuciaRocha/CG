@@ -39,6 +39,7 @@ void processInput(GLFWwindow *window)
 {
   if (glfwGetKey(window, GLFW_KEY_ENTER) == GLFW_PRESS)
     glfwSetWindowShouldClose(window, true);
+  changeBackgoundColor(window);
 }
 
 /* glfw: whenever the window size changed (by OS or user resize) this
@@ -69,7 +70,7 @@ void renderLoop(GLFWwindow *window)
 	 --------------------------------------------------------------*/
     //cria janela e processa tudo o que nela se passa
     glfwSwapBuffers(window);
-    changeBackgoundColor(window);
+    //changeBackgoundColor(window);
     
     glfwPollEvents();
     
