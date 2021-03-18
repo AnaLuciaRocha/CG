@@ -29,7 +29,6 @@ const char *fragmentShaderSource = "#version 330 core\n"
                                    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
                                    "}\n\0";
 
-
 /* process all input: query GLFW whether relevant keys are pressed/released 
 this frame and react accordingly 
 -----------------------------------------------------------------------*/
@@ -160,16 +159,18 @@ int main()
   glDeleteShader(vertexShader);
   glDeleteShader(fragmentShader);
 
+  //=================================================
+  // set up vertex data (and buffer(s)) and configure vertex attributes
+  // ------------------------------------------------------------------
 
-//=================================================
-// set up vertex data (and buffer(s)) and configure vertex attributes
-// ------------------------------------------------------------------
-
-//  vertices();
-    float vertices[] = {
+  //  vertices(); for a square (basically there are 2 triangles)
+  float vertices[] = {
       -0.5f, -0.5f, 0.0f, // left
       0.5f, -0.5f, 0.0f,  // right
-      0.0f, 0.5f, 0.0f    // top
+      0.5f, 0.5f, 0.0f,    // topright
+      -0.5f, -0.5f, 0.0f, // left
+      0.5f, 0.5f, 0.0f,    // topright
+      -0.5f, 0.5f, 0.0f, // topleft
   };
 
   unsigned int VBO, VAO;      // declare variables
@@ -182,6 +183,8 @@ int main()
   // copy our vertex data into buffer
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+  glVertexAttribPointer(3, 7, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+
   glEnableVertexAttribArray(0);
 
   /* note that this is allowed, the call to glVertexAttribPointer 
@@ -200,14 +203,12 @@ int main()
 
   //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-
-//shader();
-
+  //shader();
 
   // render loop
   // -----------
   //renderLoop(window);
-    while (!glfwWindowShouldClose(window))
+  while (!glfwWindowShouldClose(window))
   {
     //input
     //.....
@@ -225,24 +226,25 @@ int main()
     // seeing as we only have a single VAO there's no need to bind
     // it every time, but we'll do so to keep things a bit more organized
     glDrawArrays(GL_TRIANGLES, 0, 3);
+   // glDrawArrays(GL_TRIANGLES, 3, 7);
+
     // glBindVertexArray(0); // no need to unbind it every time
 
-     /* glfw: swap buffers and poll IO events (keys pressed/released, 
+    /* glfw: swap buffers and poll IO events (keys pressed/released, 
 	 mouse moved etc.)
 	 --------------------------------------------------------------*/
     //cria janela e processa tudo o que nela se passa
     glfwSwapBuffers(window);
     //changeBackgoundColor(window);
-    
-    glfwPollEvents();
 
+    glfwPollEvents();
   }
 
-      // optional: de-allocate all resources once they've outlived their purpose:
-    // ------------------------------------------------------------------------
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    glDeleteProgram(shaderProgram);
+  // optional: de-allocate all resources once they've outlived their purpose:
+  // ------------------------------------------------------------------------
+  glDeleteVertexArrays(1, &VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteProgram(shaderProgram);
 
   // glfw: terminate, clearing all previously allocated GLFW resources.
   // ------------------------------------------------------------------
