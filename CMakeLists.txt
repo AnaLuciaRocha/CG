@@ -21,4 +21,6 @@ set(ALL_LIBS
 
 add_subdirectory(tp1)
 add_subdirectory(tp1.ex1)
+add_subdirectory(tp2_ex1)
+
 

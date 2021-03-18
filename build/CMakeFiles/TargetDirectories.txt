@@ -93,3 +93,10 @@
 /home/ana/Documents/CG/build/tp1.ex1/CMakeFiles/list_install_components.dir
 /home/ana/Documents/CG/build/tp1.ex1/CMakeFiles/install/local.dir
 /home/ana/Documents/CG/build/tp1.ex1/CMakeFiles/install.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/edit_cache.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/install/strip.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/tp2_ex1.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/install.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/rebuild_cache.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/list_install_components.dir
+/home/ana/Documents/CG/build/tp2_ex1/CMakeFiles/install/local.dir
