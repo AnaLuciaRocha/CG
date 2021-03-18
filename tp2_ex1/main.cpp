@@ -1,6 +1,3 @@
-//1. make
-//2. ./tp1.ex1/tp1.ex1
-
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -167,10 +164,8 @@ int main()
   float vertices[] = {
       -0.5f, -0.5f, 0.0f, // left
       0.5f, -0.5f, 0.0f,  // right
-      0.5f, 0.5f, 0.0f,    // topright
-      -0.5f, -0.5f, 0.0f, // left
-      0.5f, 0.5f, 0.0f,    // topright
-      -0.5f, 0.5f, 0.0f, // topleft
+      0.0f, 0.5f, 0.0f,    // top
+
   };
 
   unsigned int VBO, VAO;      // declare variables
@@ -183,7 +178,6 @@ int main()
   // copy our vertex data into buffer
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
-  glVertexAttribPointer(3, 7, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
 
   glEnableVertexAttribArray(0);
 
@@ -226,7 +220,6 @@ int main()
     // seeing as we only have a single VAO there's no need to bind
     // it every time, but we'll do so to keep things a bit more organized
     glDrawArrays(GL_TRIANGLES, 0, 3);
-   // glDrawArrays(GL_TRIANGLES, 3, 7);
 
     // glBindVertexArray(0); // no need to unbind it every time
 

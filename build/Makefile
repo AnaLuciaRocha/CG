@@ -643,6 +643,32 @@ tp2_ex1/fast:
 	$(MAKE) $(MAKESILENT) -f tp2_ex1/CMakeFiles/tp2_ex1.dir/build.make tp2_ex1/CMakeFiles/tp2_ex1.dir/build
 .PHONY : tp2_ex1/fast
 
+#=============================================================================
+# Target rules for targets named tp2_ex2
+
+# Build rule for target.
+tp2_ex2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp2_ex2
+.PHONY : tp2_ex2
+
+# fast build rule for target.
+tp2_ex2/fast:
+	$(MAKE) $(MAKESILENT) -f tp2_ex2/CMakeFiles/tp2_ex2.dir/build.make tp2_ex2/CMakeFiles/tp2_ex2.dir/build
+.PHONY : tp2_ex2/fast
+
+#=============================================================================
+# Target rules for targets named tp2_ex3
+
+# Build rule for target.
+tp2_ex3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp2_ex3
+.PHONY : tp2_ex3
+
+# fast build rule for target.
+tp2_ex3/fast:
+	$(MAKE) $(MAKESILENT) -f tp2_ex3/CMakeFiles/tp2_ex3.dir/build.make tp2_ex3/CMakeFiles/tp2_ex3.dir/build
+.PHONY : tp2_ex3/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -688,6 +714,8 @@ help:
 	@echo "... tp1"
 	@echo "... tp1.ex1"
 	@echo "... tp2_ex1"
+	@echo "... tp2_ex2"
+	@echo "... tp2_ex3"
 	@echo "... triangle-vulkan"
 	@echo "... wave"
 	@echo "... windows"

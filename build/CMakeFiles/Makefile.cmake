@@ -26,6 +26,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../tp1.ex1/CMakeLists.txt"
   "../tp1/CMakeLists.txt"
   "../tp2_ex1/CMakeLists.txt"
+  "../tp2_ex2/CMakeLists.txt"
+  "../tp2_ex3/CMakeLists.txt"
   "/usr/local/share/cmake-3.19/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/local/share/cmake-3.19/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.19/Modules/CMakeCXXInformation.cmake"
@@ -88,6 +90,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "tp1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tp1.ex1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tp2_ex1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tp2_ex2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tp2_ex3/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -128,4 +132,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tp1/CMakeFiles/tp1.dir/DependInfo.cmake"
   "tp1.ex1/CMakeFiles/tp1.ex1.dir/DependInfo.cmake"
   "tp2_ex1/CMakeFiles/tp2_ex1.dir/DependInfo.cmake"
+  "tp2_ex2/CMakeFiles/tp2_ex2.dir/DependInfo.cmake"
+  "tp2_ex3/CMakeFiles/tp2_ex3.dir/DependInfo.cmake"
   )
