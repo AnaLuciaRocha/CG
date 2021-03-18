@@ -1,4 +1,4 @@
-# CG P1
+# Computação Gráfica - P1
 > Ana Rocha, a63971
 
 ## Objetivo
