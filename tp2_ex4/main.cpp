@@ -5,10 +5,19 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>
+#include <string>
+#include <fstream>
+
+
+
+using namespace std;
+
+const int SIZE = 1000;
+float vertices[SIZE];
 
 // settings
-const unsigned int SCR_WIDTH = 400;
-const unsigned int SCR_HEIGHT = 400;
+const unsigned int SCR_WIDTH = 600;
+const unsigned int SCR_HEIGHT = 800;
 
 //============================================
 
@@ -51,6 +60,29 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height)
   // width and height will be significantly larger than specified on
   // retina displays.
   glViewport(0, 0, width, height);
+}
+
+void readData() {
+
+  
+    string inFileName = "/home/ana/Documents/CG/tp2_ex4/coord.txt";
+    // ifstream inFile;
+    // inFile.open("coord.txt");
+    std::ifstream file("/home/ana/Documents/CG/tp2_ex4/coord.txt");
+
+    if (file.is_open())
+    {
+        for (int i = 0; i < SIZE; i++)
+        {
+            file >> vertices[i];
+            // cout << vertices[i] << " ";
+        }
+
+        file.close(); // CLose input file
+    }
+    else { //Error message
+        cerr << "Can't find input file " << inFileName << endl;
+    }
 }
 
 // void renderLoop(GLFWwindow *window, unsigned int)
@@ -166,14 +198,9 @@ int main()
   // ------------------------------------------------------------------
 
   //  vertices(); for a square (basically there are 2 triangles)
-  float vertices[] = {
-      -0.5f, -0.5f, 0.0f, // left
-      0.5f, -0.5f, 0.0f,  // right
-      0.5f, 0.5f, 0.0f,    // topright
-      -0.5f, -0.5f, 0.0f, // left
-      0.5f, 0.5f, 0.0f,    // topright
-      -0.5f, 0.5f, 0.0f, // topleft
-  };
+  
+  //float vertices[] = { };
+  readData();
 
   unsigned int VBO, VAO;      // declare variables
   glGenBuffers(1, &VBO);      // generate vertex buffer
@@ -239,7 +266,7 @@ int main()
 
     // seeing as we only have a single VAO there's no need to bind
     // it every time, but we'll do so to keep things a bit more organized
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 189);
 //    glDrawArrays(GL_TRIANGLES, 3, 7);
 
     // glBindVertexArray(0); // no need to unbind it every time

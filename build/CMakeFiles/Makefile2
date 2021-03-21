@@ -78,6 +78,7 @@ all: tp1.ex1/all
 all: tp2_ex1/all
 all: tp2_ex2/all
 all: tp2_ex3/all
+all: tp2_ex4/all
 
 .PHONY : all
 
@@ -88,6 +89,7 @@ preinstall: tp1.ex1/preinstall
 preinstall: tp2_ex1/preinstall
 preinstall: tp2_ex2/preinstall
 preinstall: tp2_ex3/preinstall
+preinstall: tp2_ex4/preinstall
 
 .PHONY : preinstall
 
@@ -98,6 +100,7 @@ clean: tp1.ex1/clean
 clean: tp2_ex1/clean
 clean: tp2_ex2/clean
 clean: tp2_ex3/clean
+clean: tp2_ex4/clean
 
 .PHONY : clean
 
@@ -385,6 +388,24 @@ tp2_ex3/clean: tp2_ex3/CMakeFiles/tp2_ex3.dir/clean
 .PHONY : tp2_ex3/clean
 
 #=============================================================================
+# Directory level rules for directory tp2_ex4
+
+# Recursive "all" directory target.
+tp2_ex4/all: tp2_ex4/CMakeFiles/tp2_ex4.dir/all
+
+.PHONY : tp2_ex4/all
+
+# Recursive "preinstall" directory target.
+tp2_ex4/preinstall:
+
+.PHONY : tp2_ex4/preinstall
+
+# Recursive "clean" directory target.
+tp2_ex4/clean: tp2_ex4/CMakeFiles/tp2_ex4.dir/clean
+
+.PHONY : tp2_ex4/clean
+
+#=============================================================================
 # Target rules for target external/glfw-3.3.3/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
@@ -472,12 +493,12 @@ external/glfw-3.3.3/examples/CMakeFiles/wave.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/simple.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/simple.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/simple.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/simple.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=71,72 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=69,70,71 "Built target simple"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/examples/CMakeFiles/simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/simple.dir/rule
@@ -499,12 +520,12 @@ external/glfw-3.3.3/examples/CMakeFiles/simple.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/gears.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/gears.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/gears.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/gears.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/gears.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=17,18,19 "Built target gears"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=17,18 "Built target gears"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/gears.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/examples/CMakeFiles/gears.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/gears.dir/rule
@@ -553,12 +574,12 @@ external/glfw-3.3.3/examples/CMakeFiles/boing.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=38,39,40 "Built target heightmap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=38,39 "Built target heightmap"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/rule
@@ -580,7 +601,7 @@ external/glfw-3.3.3/examples/CMakeFiles/heightmap.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=73,74 "Built target splitview"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=72,73 "Built target splitview"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/all
 
 # Build rule for subdir invocation for target.
@@ -607,12 +628,12 @@ external/glfw-3.3.3/examples/CMakeFiles/splitview.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=57,58,59 "Built target offscreen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=57,58 "Built target offscreen"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/rule
@@ -634,7 +655,7 @@ external/glfw-3.3.3/examples/CMakeFiles/offscreen.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/particles.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/particles.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/particles.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/particles.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/particles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=62,63,64,65 "Built target particles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=61,62,63,64 "Built target particles"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/particles.dir/all
 
 # Build rule for subdir invocation for target.
@@ -661,12 +682,12 @@ external/glfw-3.3.3/examples/CMakeFiles/particles.dir/clean:
 external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/build.make external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=68,69,70 "Built target sharing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=67,68 "Built target sharing"
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/rule
@@ -688,7 +709,7 @@ external/glfw-3.3.3/examples/CMakeFiles/sharing.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/title.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/title.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/title.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/title.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/title.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=83,84 "Built target title"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=82,83 "Built target title"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/title.dir/all
 
 # Build rule for subdir invocation for target.
@@ -715,12 +736,12 @@ external/glfw-3.3.3/tests/CMakeFiles/title.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=81,82 "Built target timeout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=79,80,81 "Built target timeout"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/timeout.dir/rule
@@ -877,12 +898,12 @@ external/glfw-3.3.3/tests/CMakeFiles/glfwinfo.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/threads.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/threads.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/threads.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=77,78,79,80 "Built target threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=76,77,78 "Built target threads"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/threads.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/tests/CMakeFiles/threads.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/tests/CMakeFiles/threads.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/threads.dir/rule
@@ -904,7 +925,7 @@ external/glfw-3.3.3/tests/CMakeFiles/threads.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=66,67 "Built target reopen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=65,66 "Built target reopen"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/reopen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -958,7 +979,7 @@ external/glfw-3.3.3/tests/CMakeFiles/triangle-vulkan.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=60,61 "Built target opacity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=59,60 "Built target opacity"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/all
 
 # Build rule for subdir invocation for target.
@@ -985,7 +1006,7 @@ external/glfw-3.3.3/tests/CMakeFiles/opacity.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=43,44,45 "Built target iconify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=42,43,44 "Built target iconify"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/iconify.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1066,7 +1087,7 @@ external/glfw-3.3.3/tests/CMakeFiles/events.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/icon.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/icon.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/icon.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/icon.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/icon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=41,42 "Built target icon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=40,41 "Built target icon"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/icon.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1093,12 +1114,12 @@ external/glfw-3.3.3/tests/CMakeFiles/icon.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=49,50 "Built target joysticks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=48,49,50 "Built target joysticks"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/joysticks.dir/rule
@@ -1174,7 +1195,7 @@ external/glfw-3.3.3/tests/CMakeFiles/empty.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=46,47,48 "Built target inputlag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=45,46,47 "Built target inputlag"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1201,7 +1222,7 @@ external/glfw-3.3.3/tests/CMakeFiles/inputlag.dir/clean:
 external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/build.make external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=75,76 "Built target tearing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=74,75 "Built target tearing"
 .PHONY : external/glfw-3.3.3/tests/CMakeFiles/tearing.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1255,12 +1276,12 @@ external/glfw-3.3.3/docs/CMakeFiles/docs.dir/clean:
 external/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=20 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=19,20 "Built target glad"
 .PHONY : external/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 external/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/CMakeFiles/glad.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : external/glad/CMakeFiles/glad.dir/rule
@@ -1283,7 +1304,7 @@ tp1/CMakeFiles/tp1.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
 tp1/CMakeFiles/tp1.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f tp1/CMakeFiles/tp1.dir/build.make tp1/CMakeFiles/tp1.dir/depend
 	$(MAKE) $(MAKESILENT) -f tp1/CMakeFiles/tp1.dir/build.make tp1/CMakeFiles/tp1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=85,86 "Built target tp1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=84 "Built target tp1"
 .PHONY : tp1/CMakeFiles/tp1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1311,12 +1332,12 @@ tp1.ex1/CMakeFiles/tp1.ex1.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/
 tp1.ex1/CMakeFiles/tp1.ex1.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f tp1.ex1/CMakeFiles/tp1.ex1.dir/build.make tp1.ex1/CMakeFiles/tp1.ex1.dir/depend
 	$(MAKE) $(MAKESILENT) -f tp1.ex1/CMakeFiles/tp1.ex1.dir/build.make tp1.ex1/CMakeFiles/tp1.ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=87 "Built target tp1.ex1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=85,86 "Built target tp1.ex1"
 .PHONY : tp1.ex1/CMakeFiles/tp1.ex1.dir/all
 
 # Build rule for subdir invocation for target.
 tp1.ex1/CMakeFiles/tp1.ex1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp1.ex1/CMakeFiles/tp1.ex1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : tp1.ex1/CMakeFiles/tp1.ex1.dir/rule
@@ -1339,7 +1360,7 @@ tp2_ex1/CMakeFiles/tp2_ex1.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/
 tp2_ex1/CMakeFiles/tp2_ex1.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f tp2_ex1/CMakeFiles/tp2_ex1.dir/build.make tp2_ex1/CMakeFiles/tp2_ex1.dir/depend
 	$(MAKE) $(MAKESILENT) -f tp2_ex1/CMakeFiles/tp2_ex1.dir/build.make tp2_ex1/CMakeFiles/tp2_ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=88,89 "Built target tp2_ex1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=87 "Built target tp2_ex1"
 .PHONY : tp2_ex1/CMakeFiles/tp2_ex1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1367,12 +1388,12 @@ tp2_ex2/CMakeFiles/tp2_ex2.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/
 tp2_ex2/CMakeFiles/tp2_ex2.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f tp2_ex2/CMakeFiles/tp2_ex2.dir/build.make tp2_ex2/CMakeFiles/tp2_ex2.dir/depend
 	$(MAKE) $(MAKESILENT) -f tp2_ex2/CMakeFiles/tp2_ex2.dir/build.make tp2_ex2/CMakeFiles/tp2_ex2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=90 "Built target tp2_ex2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=88,89 "Built target tp2_ex2"
 .PHONY : tp2_ex2/CMakeFiles/tp2_ex2.dir/all
 
 # Build rule for subdir invocation for target.
 tp2_ex2/CMakeFiles/tp2_ex2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp2_ex2/CMakeFiles/tp2_ex2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
 .PHONY : tp2_ex2/CMakeFiles/tp2_ex2.dir/rule
@@ -1395,7 +1416,7 @@ tp2_ex3/CMakeFiles/tp2_ex3.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/
 tp2_ex3/CMakeFiles/tp2_ex3.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f tp2_ex3/CMakeFiles/tp2_ex3.dir/build.make tp2_ex3/CMakeFiles/tp2_ex3.dir/depend
 	$(MAKE) $(MAKESILENT) -f tp2_ex3/CMakeFiles/tp2_ex3.dir/build.make tp2_ex3/CMakeFiles/tp2_ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=91,92 "Built target tp2_ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=90 "Built target tp2_ex3"
 .PHONY : tp2_ex3/CMakeFiles/tp2_ex3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1414,6 +1435,34 @@ tp2_ex3: tp2_ex3/CMakeFiles/tp2_ex3.dir/rule
 tp2_ex3/CMakeFiles/tp2_ex3.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tp2_ex3/CMakeFiles/tp2_ex3.dir/build.make tp2_ex3/CMakeFiles/tp2_ex3.dir/clean
 .PHONY : tp2_ex3/CMakeFiles/tp2_ex3.dir/clean
+
+#=============================================================================
+# Target rules for target tp2_ex4/CMakeFiles/tp2_ex4.dir
+
+# All Build rule for target.
+tp2_ex4/CMakeFiles/tp2_ex4.dir/all: external/glfw-3.3.3/src/CMakeFiles/glfw.dir/all
+tp2_ex4/CMakeFiles/tp2_ex4.dir/all: external/glad/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f tp2_ex4/CMakeFiles/tp2_ex4.dir/build.make tp2_ex4/CMakeFiles/tp2_ex4.dir/depend
+	$(MAKE) $(MAKESILENT) -f tp2_ex4/CMakeFiles/tp2_ex4.dir/build.make tp2_ex4/CMakeFiles/tp2_ex4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ana/Documents/CG/build/CMakeFiles --progress-num=91,92 "Built target tp2_ex4"
+.PHONY : tp2_ex4/CMakeFiles/tp2_ex4.dir/all
+
+# Build rule for subdir invocation for target.
+tp2_ex4/CMakeFiles/tp2_ex4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp2_ex4/CMakeFiles/tp2_ex4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/Documents/CG/build/CMakeFiles 0
+.PHONY : tp2_ex4/CMakeFiles/tp2_ex4.dir/rule
+
+# Convenience name for target.
+tp2_ex4: tp2_ex4/CMakeFiles/tp2_ex4.dir/rule
+
+.PHONY : tp2_ex4
+
+# clean rule for target.
+tp2_ex4/CMakeFiles/tp2_ex4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tp2_ex4/CMakeFiles/tp2_ex4.dir/build.make tp2_ex4/CMakeFiles/tp2_ex4.dir/clean
+.PHONY : tp2_ex4/CMakeFiles/tp2_ex4.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
