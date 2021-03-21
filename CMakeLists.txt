@@ -24,5 +24,4 @@ add_subdirectory(tp1.ex1)
 add_subdirectory(tp2_ex1)
 add_subdirectory(tp2_ex2)
 add_subdirectory(tp2_ex3)
-
-
+add_subdirectory(tp2_ex4)
