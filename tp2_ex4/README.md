@@ -1,4 +1,4 @@
-# Computação Gráfica - TP2 OpenGL 2D
+# Computação Gráfica - TP2 Símbolo 2D
 > Ana Rocha, a63971
 
 ## Objetivo
