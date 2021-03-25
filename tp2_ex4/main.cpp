@@ -10,18 +10,17 @@
 
 using namespace std;
 
-//const int SIZE = 1000;
-//float vertices[SIZE];
-//unsigned int indices[SIZE];
+const int SIZE = 1000;
+float vertices[SIZE];
+unsigned int indices[SIZE];
+
 
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 //============================================
-const int SIZE = 1000;
-float vertices[SIZE];
-unsigned int indices[SIZE];
+
 
 /* process all input: query GLFW whether relevant keys are pressed/released 
 this frame and react accordingly 
@@ -48,13 +47,13 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height)
 void readData()
 {
 
-  string inFileName = "/home/ana/Downloads/coord.txt";
-  string inFileName2 = "/home/ana/Downloads/indices.txt";
+  string coordinatesFile = "/home/ana/Documents/CG/tp2_ex4/Coordinates/coord.txt";
+  string indicesFile = "/home/ana/Documents/CG/tp2_ex4/Coordinates/indices.txt";
   
-  std::ifstream file("/home/ana/Documents/CG/tp2_ex4/Coordinates/coord.txt");
-  std::ifstream file2("/home/ana/Documents/CG/tp2_ex4/Coordinates/indices.txt");
+  std::ifstream file(coordinatesFile);
+  std::ifstream file2(indicesFile);
 
-  if (file.is_open())
+  if (file.is_open() && file2.is_open() )
   {
     for (int i = 0; i < SIZE; i++)
     {
@@ -68,7 +67,7 @@ void readData()
   }
   else
   { //Error message
-    cerr << "Can't find input file " << inFileName << endl;
+    cerr << "Can't find input file " << coordinatesFile << endl;
   }
 }
 
@@ -84,7 +83,7 @@ int main()
 
   // glfw window creation
   // --------------------
-  GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Triangulos", NULL,
+  GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Letra 2D", NULL,
                                         NULL);
 
   if (window == NULL)
