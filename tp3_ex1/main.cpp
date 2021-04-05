@@ -308,10 +308,12 @@ int main()
     // ------
 
      // Dark blue background
-          glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        glUseProgram(shaderProgram);
-        glBindVertexArray(VBO);
+    glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(shaderProgram);
+    glBindVertexArray(VBO);
+
+
 
    // Send our transformation to the currently bound shader, 
       // in the "MVP" uniform
@@ -350,12 +352,9 @@ int main()
           glDepthFunc(GL_LESS); 
 
           // also clear the depth buffer now!
-          glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); 
+         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); 
           
-        //float timeValue = glfwGetTime();
-        //float greenValue = sin(timeValue)/2.0f+0.5f;
-        //int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
-        //glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+       
         // seeing as we only have a single VAO there's no need to bind
         // it every time, but we'll do so to keep things a bit more organized
         glDrawArrays(GL_TRIANGLES, 0, 36);
