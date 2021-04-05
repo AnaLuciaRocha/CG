@@ -7,9 +7,11 @@ add_definitions(
 )
 
 add_subdirectory(glfw-3.3.3)
+add_subdirectory(glm-0.9.7.1)
 
 include_directories(
     glfw_3.3.3/include/GLFW/
+    glm-0.9.7.1/glm/
 )
 
 add_subdirectory(glad)

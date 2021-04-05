@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../external/glfw_3.3.3/include/GLFW"
+  "../external/glm-0.9.7.1/glm"
   "../external/glad/include"
   )
 
