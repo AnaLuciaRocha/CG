@@ -17,6 +17,9 @@ Mostrar o símbolo colorido modelado a partir de triângulos. </p>
     1. glad.h
     2. glfw3.h
     3. iostrem
+    4. cmath
+    5. string
+    6. fstream
     
 - Método de "triangulização"
 
@@ -98,7 +101,7 @@ Mostrar o símbolo colorido modelado a partir de triângulos. </p>
     </P>
 - run
     1. Para executar o progama corre-se o seguinte comando: ```ana@caju:~/Documents/CG/build$ ./tp2_ex4/tp2_ex4``` 
-    
+
     2. Assim que o programa é executado aparece uma janela com o título *Letra 2D* com dimensão 800x600, como se pode ver na <a href="figura3">Figura 3</a> </p>
     
         <figure class="Figura">
