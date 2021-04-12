@@ -789,12 +789,6 @@ GLFW/glfw3.h
 -
 iostream
 -
-cmath
--
-string
--
-fstream
--
 glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp

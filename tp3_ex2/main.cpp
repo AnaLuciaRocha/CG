@@ -4,9 +4,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include <cmath>
-#include <string>
-#include <fstream>
+
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -67,14 +65,13 @@ void processInput(GLFWwindow *window)
   if(glfwGetKey(window, GLFW_KEY_ENTER) == GLFW_PRESS)
     glfwSetWindowShouldClose(window, true);
   if(glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS){
-	cameraPos = glm::vec3(-100.0f,0.0f,0.0f);
+	cameraPos = glm::vec3(-1.0f,0.0f,0.0f);
   }
   else if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS){
-  	cameraPos = glm::vec3(10.0f,0.0f,0.0f);
+  	cameraPos = glm::vec3(1.0f,0.0f,0.0f);
   }
-  if(glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS){
+  else if(glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS){
     cameraPos = glm::vec3(0.0f,100.0f,1.0f);
-
   }
   else if(glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS){
     cameraPos = glm::vec3(0.0f,-100.0f,1.0f);
@@ -82,7 +79,7 @@ void processInput(GLFWwindow *window)
   else if(glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS){
     cameraPos = glm::vec3(0.0f,0.0f,1.0f);
   }
-  if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS){
+  else if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS){
     cameraPos = glm::vec3(0.0f,0.0f,-1.0f);
 
   }
@@ -143,7 +140,7 @@ int main()
 
   // glfw window creation
   // --------------------
-  GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Cubo", NULL,
+  GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Letra 3D", NULL,
                                         NULL);
 
   if (window == NULL)
@@ -1835,7 +1832,7 @@ int main()
 
 	  // Model matrix : an identity matrix (model will be at the origin)
       glm::mat4 Model = glm::mat4(1.0f);
-	  Model = glm::rotate(Model, glm::radians(-30.0f), glm::vec3(0.0, 1.0, 0.0)); //roda segundo o eixo dos zz
+	  Model = glm::rotate(Model, glm::radians(-30.0f), glm::vec3(0.0, 1.0, 0.0)); //roda segundo o eixo dos yy
 	
 	  // View camera matrix
       glm::mat4 View = glm::lookAt(
@@ -1849,7 +1846,7 @@ int main()
       // display range : 0.1 unit <-> 100 units
      // glm::mat4 Projection = glm::perspective(glm::radians(30.0f), 4.0f / 3.0f, 0.1f, 100.0f);
 
-	  glm::mat4 Projection = glm::ortho(-1.0f,1.0f,-1.0f,1.0f,0.0f,100.0f); // In world coordinates
+	  glm::mat4 Projection = glm::ortho(-1.0f,1.0f,-1.0f,1.0f,0.1f,100.0f); // In world coordinates
 
     
       
