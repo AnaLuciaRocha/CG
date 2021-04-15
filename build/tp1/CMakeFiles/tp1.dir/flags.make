@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ana/Documents/CG/external/glfw-3.3.3/include/GLFW -I/home/ana/Documents/CG/external/glad/include -I/home/ana/Documents/CG/external/glfw-3.3.3/include
+CXX_INCLUDES = -I/home/ana/Documents/CG/external/glfw-3.3.3/include/GLFW -I/home/ana/Documents/CG/external/glm-0.9.7.1 -I/home/ana/Documents/CG/external/glad/include -I/home/ana/Documents/CG/external/glfw-3.3.3/include
 
 CXX_FLAGS = 
 
