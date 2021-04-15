@@ -121,6 +121,7 @@ Foi pedido um ângulo de 30º em torno do eixo dos Y, o que significa que a letr
     1. Para executar o progama corre-se o seguinte comando: ```ana@caju:~/Documents/CG/build$ ./tp3_ex2/tp3_ex2``` 
 
     2. Assim que o programa é executado aparece uma janela com o título *Letra 3D* com dimensão 800x600, como se pode ver na <a href="figura3">Figura 3</a> cuja letra tem um angulo de 30º em torno do eixo vertical</p>    
+        
         <figure class="Figura">
         <img id="figura3"src="images/F.png" width="200" height="200">
         <figcaption>Figura 3 - Ecrã inicial e visão ortogonal frontal da letra</figcaption>
